@@ -4,5 +4,7 @@
              x:Class="SampleHello.AbsolutePage" Title="Sample Absolute">
     <AbsoluteLayout>
         <Label Text="Hello World" TextColor="Red" FontSize="Large" AbsoluteLayout.LayoutBounds="115,300,200,100" LineBreakMode="WordWrap" />
+        <BoxView Color="Olive" AbsoluteLayout.LayoutBounds=".5,1,100,100" AbsoluteLayout.LayoutFlags="PositionProportional" />
+        <BoxView Color="Red" AbsoluteLayout.LayoutBounds="0,0.5,100,50" AbsoluteLayout.LayoutFlags="PositionProportional" />
     </AbsoluteLayout>
 </ContentPage>
