@@ -9,6 +9,7 @@
                 <RowDefinition Height="40" />
                 <RowDefinition Height="40" />
                 <RowDefinition Height="50" />
+                <RowDefinition Height="*" />
             </Grid.RowDefinitions>
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="150" />
@@ -25,6 +26,7 @@
                 <Button x:Name="btnSubmit" Text="Submit" />
                 <Button x:Name="btnClear" Text="Clear" />
             </StackLayout>
+            <Image Source="monkey.png" Aspect="AspectFit" HorizontalOptions="Center" WidthRequest="150" VerticalOptions="Fill" Grid.Column="0" Grid.Row="4" Grid.ColumnSpan="2" />
         </Grid>
     </ContentPage.Content>
 </ContentPage>
