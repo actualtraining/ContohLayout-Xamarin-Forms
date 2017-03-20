@@ -5,19 +5,26 @@
     <ContentPage.Content>
         <Grid>
             <Grid.RowDefinitions>
-                <RowDefinition Height="30" />
-                <RowDefinition Height="30" />
-                <RowDefinition Height="30" />
+                <RowDefinition Height="40" />
+                <RowDefinition Height="40" />
+                <RowDefinition Height="40" />
+                <RowDefinition Height="50" />
             </Grid.RowDefinitions>
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="150" />
                 <ColumnDefinition Width="*" />
             </Grid.ColumnDefinitions>
 
-            <Label FontSize="Medium" Text="First Name :" Grid.Row="0" Grid.Column="0" HorizontalTextAlignment="End" />
-            <Entry x:Name="txtFirstName" Placeholder="insert first name" Grid.Row="0" Grid.Column="1" />
-            <Label FontSize="Medium" Text="Last Name :" Grid.Row="1" Grid.Column="0" HorizontalTextAlignment="End" />
-            
+            <Label FontSize="Large" VerticalTextAlignment="Center" Text="Registration Forms" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2" 
+                   HorizontalTextAlignment="Center" />
+            <Label FontSize="Medium" VerticalTextAlignment="Center" Text="First Name :" Grid.Row="1" Grid.Column="0" HorizontalTextAlignment="End" />
+            <Entry x:Name="txtFirstName" Placeholder="insert first name" Grid.Row="1" Grid.Column="1" />
+            <Label FontSize="Medium" VerticalTextAlignment="Center" Text="Last Name :" Grid.Row="2" Grid.Column="0" HorizontalTextAlignment="End" />
+            <Entry x:Name="txtLastName" Placeholder="insert last name" Grid.Row="2" Grid.Column="1" />
+            <StackLayout Grid.Row="3" Grid.Column="1" Orientation="Horizontal">
+                <Button x:Name="btnSubmit" Text="Submit" />
+                <Button x:Name="btnClear" Text="Clear" />
+            </StackLayout>
         </Grid>
     </ContentPage.Content>
 </ContentPage>
