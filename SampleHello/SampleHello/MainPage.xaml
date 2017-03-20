@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:SampleHello"
+             x:Class="SampleHello.MainPage" Title="Main Page">
+
+    <ContentPage.Content>
+        <StackLayout Orientation="Vertical">
+            <Label Text="First Name :" FontSize="Medium" />
+            <Entry x:Name="txtFirstName" Placeholder="insert first name" />
+            <Label Text="Last Name" FontSize="Medium" />
+            <Entry x:Name="txtLastName" Placeholder="insert last name" />
+            <StackLayout Orientation="Horizontal">
+                <Button x:Name="btnSubmit" Text="Submit" WidthRequest="80" />
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
