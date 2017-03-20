@@ -13,7 +13,7 @@ namespace SampleHello
         {
             InitializeComponent();
 
-            MainPage = new RelativeLayoutPage();
+            MainPage = new AbsolutePage();
         }
 
         protected override void OnStart()
